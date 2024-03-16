@@ -1,0 +1,209 @@
+{
+  "id": "25610d0867c31b4ee4406bdb1ff625df8cc26",
+  "revision": "3d0867c31b4ee4406bdb1ff625df8cc26",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 175
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 175
+  },
+  "visual_programming": {
+    "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:14964-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPatch": "template_patch_model:1086-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:14962-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:20366-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPatch": "template_patch_model:1094-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:8883-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "toPort": "2"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:21002-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPatch": "template_patch_model:14962-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPort": "100",
+        "toPatch": "consumer_patch_model:14952-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "toPort": "2"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:23067-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPatch": "template_patch_model:1094-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPort": "100",
+        "toPatch": "consumer_patch_model:23065-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "toPort": "3"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:9442-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPatch": "template_patch_model:1094-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:1086-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "toPort": "1"
+      }
+    ],
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:94-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "subpatches": [
+          "consumer_patch_model:14952-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+          "consumer_patch_model:23065-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+          "template_patch_model:1086-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+          "template_patch_model:1094-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+          "template_patch_model:14962-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+          "template_patch_model:8883-d0867c31-b4ee-4406-bdb1-ff625df8cc26"
+        ]
+      }
+    ],
+    "patches": [
+      {
+        "modelName": "consumer_patch_model",
+        "name": "3dText0",
+        "identifier": "consumer_patch_model:14952-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "object": "text_extrusion_model:14765-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "objectProperty": "text_extrusion_text",
+        "position": [
+          1316,
+          500
+        ]
+      },
+      {
+        "modelName": "consumer_patch_model",
+        "name": "audioPlaybackController0",
+        "identifier": "consumer_patch_model:23065-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "object": "playback_controller_model:7991-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "objectProperty": "audio_playback_controller_stop",
+        "position": [
+          799.8470588235291,
+          480.5294117647058
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Counter",
+        "identifier": "template_patch_model:1086-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "position": [
+          764,
+          236
+        ],
+        "templateId": "builtin.counter",
+        "values": [
+          {
+            "port": "4",
+            "value": {
+              "t": "int",
+              "v": 0
+            }
+          },
+          {
+            "port": "5",
+            "value": {
+              "t": "int",
+              "v": 7
+            }
+          }
+        ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Screen Tap",
+        "identifier": "template_patch_model:1094-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "position": [
+          380,
+          356
+        ],
+        "templateId": "builtin.tapGesture"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Option Picker",
+        "identifier": "template_patch_model:14962-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "position": [
+          1100,
+          308
+        ],
+        "templateId": "builtin.variadicOptionPicker",
+        "values": [
+          {
+            "port": "2",
+            "value": {
+              "t": "string",
+              "v": "R . . . . .N"
+            }
+          },
+          {
+            "port": "3",
+            "value": {
+              "t": "string",
+              "v": "RA . . . .N"
+            }
+          },
+          {
+            "port": "4",
+            "value": {
+              "t": "string",
+              "v": "RAM . . .N"
+            }
+          },
+          {
+            "port": "5",
+            "value": {
+              "t": "string",
+              "v": "RAMA . .N"
+            }
+          },
+          {
+            "port": "6",
+            "value": {
+              "t": "string",
+              "v": "RAMAD .N"
+            }
+          },
+          {
+            "port": "7",
+            "value": {
+              "t": "string",
+              "v": "RAMADAN"
+            }
+          },
+          {
+            "port": "8",
+            "value": {
+              "t": "string",
+              "v": "RAMADAN"
+            }
+          }
+        ],
+        "variadicInfo": {
+          "input": 6
+        },
+        "variantInfo": "string"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Switch",
+        "identifier": "template_patch_model:8883-d0867c31-b4ee-4406-bdb1-ff625df8cc26",
+        "position": [
+          788,
+          596
+        ],
+        "templateId": "builtin.toggle"
+      }
+    ]
+  }
+}
